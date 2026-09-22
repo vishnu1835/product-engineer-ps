@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jerry AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Background decoration -->
+<div class="background-glow"></div>
+<div class="background-symbol">✦</div>
+
+
+<div class="app">
+
+
+    <!-- =========================================
+         CHARACTER SIDEBAR
+    ========================================== -->
+
+    <aside class="character-panel">
+
+        <div class="character-image-container">
+
+            <!--
+                Put your Jerry image here.
+
+                Example:
+                images/jerry.png
+
+                We will add the actual image file later.
+            -->
+
+            <img
+                src="images/jerry.png"
+                alt="Jerry"
+                class="character-image"
+            >
+
+            <div class="image-overlay"></div>
+
+        </div>
+
+
+        <div class="character-details">
+
+            <h1>Jerry AI</h1>
+
+            <p class="character-alias">
+                Jerry Mouse
+            </p>
+
+            <p class="character-role">
+                The clever little mouse
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="character-quote">
+                "A little mischief never hurt anyone."
+            </p>
+
+        </div>
+
+
+        <div class="fatui-mark">
+            ✦
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================================
+         MAIN CHAT APPLICATION
+    ========================================== -->
+
+    <section class="chat-section">
+
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div class="character-info">
+
+                <h2>
+                    Jerry AI
+                </h2>
+
+                <p>
+                    Jerry • The clever little mouse
+                </p>
+
+            </div>
+
+
+            <div
+                id="connectionStatus"
+                class="status connected"
+            >
+                <span class="status-dot"></span>
+                Connected
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             CHAT AREA
+        ====================================== -->
+
+        <main
+            id="chat"
+            class="chat"
+            aria-live="polite"
+        >
+
+            <!--
+                Messages will appear here
+                through script.js
+            -->
+
+            <div class="welcome-message">
+
+                <div class="welcome-icon">
+                    ✦
+                </div>
+
+                <h2>
+                    Ready when you are.
+                </h2>
+
+                <p>
+                    Talk to Jerry.
+                </p>
+
+            </div>
+
+        </main>
+
+
+
+        <!-- =====================================
+             INPUT AREA
+        ====================================== -->
+
+        <footer class="input-area">
+
+            <div class="input-wrapper">
+
+                <input
+                    id="messageInput"
+                    type="text"
+                    placeholder="Talk to Jerry..."
+                    autocomplete="off"
+                    aria-label="Message"
+                >
+
+                <button
+                    id="sendButton"
+                    type="button"
+                    aria-label="Send message"
+                >
+                    <span>➤</span>
+                </button>
+
+            </div>
+
+        </footer>
+
+
+    </section>
+
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

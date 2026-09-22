@@ -1,0 +1,19 @@
+{
+  "name": "jerry-ai",
+  "version": "1.0.0",
+  "description": "Jerry AI - Resumable realtime conversation prototype using SSE and durable run history.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test.js"
+  },
+  "keywords": [
+    "sse",
+    "realtime",
+    "conversation",
+    "ollama",
+    "resumable"
+  ],
+  "author": "Vishnu Nivasini J",
+  "license": "ISC"
+}
